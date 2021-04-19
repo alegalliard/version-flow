@@ -1,0 +1,10 @@
+<div class="release" tabindex="0">
+    <a href="/">
+        <i *ngIf="isGoogle" class="fab fa-google-play"></i>
+        <i *ngIf="isApple" class="fab fa-app-store"></i>
+        <span class="version">
+            <ng-content></ng-content>
+        </span>
+    </a>
+    <small>{{releasedAt}}</small>
+</div>
